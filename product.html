@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Shoes - Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        .filters {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .filters select, .filters input {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            padding: 15px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #888;
+            font-size: 14px;
+        }
+        .product input {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product input:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .product img {
+            max-width: 100%;
+            height: 75%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Shoes</h1>
+        <p>Find Your Perfect Pair</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="offre page.html">Offers</a>
+        <a href="checkout bage.html">Brands</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="cart page.html">show Ur Cart</a>
+    </nav>
+
+    <section class="filters">
+        <h2>Filter Products</h2>
+        <select>
+            <option value="">Sort By: Default</option>
+            <option value="price_low">Price: Low to High</option>
+            <option value="price_high">Price: High to Low</option>
+        </select>
+        <br>
+        <input type="text" placeholder="Search for a product...">
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="Men's Running Shoes.jpg" alt="Men's Running Shoes" id="a1">
+            <h3>Men's Running Shoes</h3>
+            <p role="79.99" id="a2">$79.99</p>
+            <input type="button" value="show more" onclick="show('a1','a2')">
+        </div>
+        <div class="product">
+            <img src="Women's Sneakers.jpg" alt="Women's Sneakers" id="a3">
+            <h3>Women's Sneakers</h3>
+            <p role="89.99" id="a4">$89.99</p>
+            <input type="button" value="show more" onclick="show('a3','a4')">
+        </div>
+        <div class="product">
+            <img src="Sports Shoes.jpg" alt="Sports Shoes" id="a5">
+            <h3>Sports Shoes</h3>
+            <p role="99.99" id="a6">$99.99</p>
+            <input type="button" value="show more" onclick="show('a5','a6')">
+        </div>
+        <div class="product">
+            <img src="Kids' Casual Shoes.jpg" alt="Kids' Casual Shoes" id="a7">
+            <h3>Kids' Casual Shoes</h3>
+            <p role="49.99" id="a8">$49.99</p>
+            <input type="button" value="show more" onclick="show('a7','a8')">
+        </div>
+    </section>
+
+    <footer style="background-color: #333; color: white; text-align: center; padding: 15px;">
+        <p>&copy; 2025 Happy Shoes. All Rights Reserved.</p>
+        <nav style="margin-top: 10px;">
+            <a href="privacy policy.html" style="color: white; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+            <a href="term of service.html" style="color: white; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+            <a href="support.html" style="color: white; text-decoration: none; margin: 0 10px;">Support</a>
+        </nav>
+        <p style="margin-top: 10px;">Follow us:</p>
+        <div>
+            <a href="https://facebook.com" target="_blank" style="margin: 0 5px;">
+                <img src="facebook.jpeg" alt="Facebook" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://instagram.com" target="_blank" style="margin: 0 5px;">
+                <img src="instagram.jpeg" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://twitter.com" target="_blank" style="margin: 0 5px;">
+                <img src="twitter.png" alt="Twitter" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </footer>
+    <script src="product.js"></script>
+</body>
+</html>

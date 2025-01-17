@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Shoes - Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        .cart {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .cart h2 {
+            margin-bottom: 20px;
+        }
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .cart-table th, .cart-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-table th {
+            background-color: #f4f4f4;
+        }
+        .cart-table img {
+            width: 50px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .cart-summary {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .cart-summary p {
+            font-size: 18px;
+        }
+        .checkout-btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .checkout-btn:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Shoes</h1>
+        <p>Your Shopping Cart</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="offre page.html">Offers</a>
+        <a href="checkout bage.html">Brands</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section class="cart">
+        <h2>Shopping Cart</h2>
+        <table class="cart-table" id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th></th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <input type="button" value="Proceed to Checkout" onclick="chekout()" class="checkout-btn">
+        </div>
+    </section>
+
+    <footer style="background-color: #333; color: white; text-align: center; padding: 15px;">
+        <p>&copy; 2025 Happy Shoes. All Rights Reserved.</p>
+        <nav style="margin-top: 10px;">
+            <a href="privacy policy.html" style="color: white; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+            <a href="term of service.html" style="color: white; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+            <a href="support.html" style="color: white; text-decoration: none; margin: 0 10px;">Support</a>
+        </nav>
+        <p style="margin-top: 10px;">Follow us:</p>
+        <div>
+            <a href="https://facebook.com" target="_blank" style="margin: 0 5px;">
+                <img src="facebook.jpeg" alt="Facebook" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://instagram.com" target="_blank" style="margin: 0 5px;">
+                <img src="instagram.jpeg" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://twitter.com" target="_blank" style="margin: 0 5px;">
+                <img src="twitter.png" alt="Twitter" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      padding: 0;
+      color: #333;
+    }
+    h1, h2 {
+      color: #0056b3;
+    }
+    p {
+      margin: 10px 0;
+    }
+    ul {
+      margin: 10px 0 20px 20px;
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-form {
+      margin-top: 20px;
+      max-width: 400px;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .contact-form input, .contact-form textarea, .contact-form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background-color: #0056b3;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #003f7f;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      text-align: center;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>Support</h1>
+  <p>
+    Need help? We’re here for you! Browse our resources or reach out to our support team.
+  </p>
+
+  <h2>1. Frequently Asked Questions (FAQ)</h2>
+  <p>
+    Before contacting us, you might find your answer in our <a href="/faq">FAQ section</a>. We cover the most common questions about our services.
+  </p>
+
+  <h2>2. Contact Us</h2>
+  <p>If you still need help, please use the form below to reach out to us:</p>
+  
+  <div class="contact-form">
+    <form action="/submit-support-request" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Enter your message here" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <h2>3. Other Contact Options</h2>
+  <ul>
+    <li>Email: <a href="os761132@gmail.com">support@said.com</a></li>
+    <li>Phone: +216 21820246</li>
+    <li>Address: 7016 el alia, bizert City</li>
+  </ul>
+
+  <h2>4. Business Hours</h2>
+  <p>Our support team is available during the following hours:</p>
+  <ul>
+    <li>Monday to Friday: 9:00 AM - 6:00 PM</li>
+    <li>Saturday: 10:00 AM - 4:00 PM</li>
+    <li>Sunday: Closed</li>
+  </ul>
+
+  <footer>
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>

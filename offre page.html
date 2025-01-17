@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Shoes - Offers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        .offers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .offer {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        .offer img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .offer h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .offer p {
+            color: #888;
+            font-size: 14px;
+        }
+        .price {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .discount {
+            color: red;
+            font-size: 18px;
+        }
+        .offer input {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .offer input:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Shoes</h1>
+        <p>Special Offers Just for You!</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="checkout bage.html">Brands</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="cart page.html">show Ur Cart</a>
+    </nav>
+
+    <section class="offers">
+        <div class="offer">
+            <img src="Men's Casual Shoes.jpg" alt="Men's Casual Shoes" id="a1">
+            <h3>Men's Casual Shoes</h3>
+            <p class="price"><span class="discount" id="a2" role="49.99">$49.99</span> <del>$79.99</del></p>
+            <input type="button" value="show more" onclick="show('a1','a2')">
+        </div>
+        <div class="offer">
+            <img src="Women's Running Shoes.jpg" alt="Women's Running Shoes" id="a3">
+            <h3>Women's Running Shoes</h3>
+            <p class="price"><span class="discount" id="a4" role="59.99">$59.99</span> <del>$99.99</del></p>
+            <input type="button" value="show more" onclick="show('a3','a4')">
+        </div>
+        <div class="offer">
+            <img src="Kids' Sports Shoes.jpg" alt="Kids' Sports Shoes" id="a5">
+            <h3>Kids' Sports Shoes</h3>
+            <p class="price"><span class="discount" id="a6" role="39.99">$39.99</span> <del>$69.99</del></p>
+            <input type="button" value="show more" onclick="show('a5','a6')">
+        </div>
+        <div class="offer">
+            <img src="Men's Formal Shoes.jpg" alt="Men's Formal Shoes" id="a7">
+            <h3>Men's Formal Shoes</h3>
+            <p class="price"><span class="discount" id="a8" role="79.99">$79.99</span> <del>$129.99</del></p>
+            <input type="button" value="show more" onclick="show('a7','a8')">
+        </div>
+    </section>
+
+    <footer style="background-color: #333; color: white; text-align: center; padding: 15px;">
+        <p>&copy; 2025 Happy Shoes. All Rights Reserved.</p>
+        <nav style="margin-top: 10px;">
+            <a href="privacy policy.html" style="color: white; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+            <a href="term of service.html" style="color: white; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+            <a href="support.html" style="color: white; text-decoration: none; margin: 0 10px;">Support</a>
+        </nav>
+        <p style="margin-top: 10px;">Follow us:</p>
+        <div>
+            <a href="https://facebook.com" target="_blank" style="margin: 0 5px;">
+                <img src="facebook.jpeg" alt="Facebook" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://instagram.com" target="_blank" style="margin: 0 5px;">
+                <img src="instagram.jpeg" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://twitter.com" target="_blank" style="margin: 0 5px;">
+                <img src="twitter.png" alt="Twitter" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </footer>
+    <script src="offre.js"></script>
+</body>
+</html>

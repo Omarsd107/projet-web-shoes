@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids' Shoes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7faff;
+        }
+        header {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #e64a19;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            flex: 1 1 calc(33.333% - 20px);
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-item h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product-item p {
+            color: #777;
+        }
+        .product-item input {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .product-item input:hover {
+            background-color: #e64a19;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff5722;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kids' Shoes Collection</h1>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="offre page.html">Offers</a>
+    <a href="checkout bage.html">Brands</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="cart page.html">show Ur Cart</a>
+</nav>
+
+<div class="container">
+    <div class="product">
+        <div class="product-item">
+            <img src="Light-Up Sneakers.jpg" alt="Light-Up Sneakers" id="im1">
+            <h3>Light-Up Sneakers</h3>
+            <p id="p1" role="39.99">$39.99</p>
+            <input type="button" value="Add to Cart" onclick="show('im1','p1')">
+        </div>
+        <div class="product-item">
+            <img src="Sporty Trainers kids.jpg" alt="Sporty Trainers" id="im2">
+            <h3>Sporty Trainers</h3>
+            <p id="p2" role="29.99">$29.99</p>
+            <input type="button" value="Add to Cart" onclick="show('im2','p2')">
+        </div>
+        <div class="product-item">
+            <img src="Comfortable sandals kids.jpg" alt="Comfortable Sandals"id="im3">
+            <h3>Comfortable Sandals</h3>
+            <p id="p3" role="19.99">$19.99</p>
+            <input type="button" value="Add to Cart" onclick="show('im3','p3')">
+        </div>
+    </div>
+</div>
+
+<footer style="background-color: #333; color: white; text-align: center; padding: 15px;">
+    <p>&copy; 2025 Happy Shoes. All Rights Reserved.</p>
+    <nav style="margin-top: 10px;">
+        <a href="privacy policy.html" style="color: white; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+        <a href="term of service.html" style="color: white; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+        <a href="support.html" style="color: white; text-decoration: none; margin: 0 10px;">Support</a>
+    </nav>
+    <p style="margin-top: 10px;">Follow us:</p>
+    <div>
+        <a href="https://facebook.com" target="_blank" style="margin: 0 5px;">
+            <img src="facebook.jpeg" alt="Facebook" style="width: 24px; height: 24px;">
+        </a>
+        <a href="https://instagram.com" target="_blank" style="margin: 0 5px;">
+            <img src="instagram.jpeg" alt="Instagram" style="width: 24px; height: 24px;">
+        </a>
+        <a href="https://twitter.com" target="_blank" style="margin: 0 5px;">
+            <img src="twitter.png" alt="Twitter" style="width: 24px; height: 24px;">
+        </a>
+    </div>
+</footer>
+<script src="kids shoe.js"></script>
+</body>
+</html>

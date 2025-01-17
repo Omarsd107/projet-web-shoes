@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Shoes - Product Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            gap: 20px;
+        }
+        .product-details img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+        .details {
+            max-width: 500px;
+        }
+        .details h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .details p {
+            margin: 10px 0;
+            color: #555;
+        }
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin: 20px 0;
+        }
+        .size-options, .color-options {
+            margin: 20px 0;
+        }
+        .size-options span, .color-options span {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .size-options span:hover, .color-options span:hover {
+            background-color: #f7f7f7;
+        }
+        .add-to-cart {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .add-to-cart:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Shoes</h1>
+        <p>Find Your Perfect Pair</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="offre page.html">Offers</a>
+        <a href="checkout bage.html">Brands</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="cart page.html">show Ur Cart</a>
+    </nav>
+
+    <section class="product-details">
+        <div>
+            <img src="product-image.jpg" alt="Product Image" id="a1">
+        </div>
+        <div class="details">
+            <h1 id="a2"></h1>
+            <p class="price" id="a3"></p>
+
+            <div class="size-options">
+                <h3>Available Sizes:</h3>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
+            </div>
+
+            <div class="color-options">
+                <h3>Available Colors:</h3>
+                <span style="background-color: black; color: white;">Black</span>
+                <span style="background-color: gray; color: black;">Gray</span>
+                <span style="background-color: navy; color: white;">Navy</span>
+            </div>
+            <input type="button" value="Add to Cart" onclick="addtocart()" class="add-to-cart" >
+        </div>
+    </section>
+
+
+    <footer style="background-color: #333; color: white; text-align: center; padding: 15px;">
+        <p>&copy; 2025 Happy Shoes. All Rights Reserved.</p>
+        <nav style="margin-top: 10px;">
+            <a href="privacy policy.html" style="color: white; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+            <a href="term of service.html" style="color: white; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+            <a href="support.html" style="color: white; text-decoration: none; margin: 0 10px;">Support</a>
+        </nav>
+        <p style="margin-top: 10px;">Follow us:</p>
+        <div>
+            <a href="https://facebook.com" target="_blank" style="margin: 0 5px;">
+                <img src="facebook.jpeg" alt="Facebook" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://instagram.com" target="_blank" style="margin: 0 5px;">
+                <img src="instagram.jpeg" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://twitter.com" target="_blank" style="margin: 0 5px;">
+                <img src="twitter.png" alt="Twitter" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </footer>
+    <script src="product detail.js"></script>
+</body>
+</html>
